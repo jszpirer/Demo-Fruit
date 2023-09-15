@@ -147,6 +147,6 @@ if __name__ == '__main__':
     iterations = sys.argv[4]
     for i in range(int(number)):
         autodemo = AUTODEMO(f"{experience}_{i+1}")
-        autodemo.sshCmd(f"sbatch /home/jszpirer/TuttiFrutti/autodemo/autodemo_TuttiFrutti_distance_Double100k.slurm {experience}_{i+1} {iterations} {steps}")
+        autodemo.sshCmd(f"sbatch /home/jszpirer/TuttiFrutti/autodemo/autodemo_distance_Double100k.slurm {experience}_{i+1} {iterations} {steps}")
         print(f"Launched iteration {i+1}")
         time.sleep(5)
