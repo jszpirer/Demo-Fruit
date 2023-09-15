@@ -1,0 +1,56 @@
+###################################################### -*- mode: r -*- #####
+## Scenario setup for Iterated Race (iRace).
+############################################################################
+## To use the default value of a parameter of iRace, simply do not set
+## the parameter (comment it out in this file, and do not give any
+## value on the command line).
+
+## File that contains the description of the parameters.
+parameterFile = "../grammars/sq-grammar.txt"
+
+#File that contains the options for parameter dependencies
+dependencyFile = "../grammars/sq-depend-config.txt"
+
+## Directory where the programs will be run.
+execDir = "../results-folder"
+
+## Directory where tuning instances are located, either absolute path or
+## relative to current directory.
+trainInstancesDir = "../mission-folder"
+
+#The maximum total budget for the runs of targetRunner
+maxExperiments = 200000
+
+## Indicates the number of decimal places to be considered for the
+## real parameters.
+digits = 2
+
+## Specifies how many instances are evaluated before the first elimination
+## test.
+firstTest = 10
+
+## Specifies how many instances are evaluated between elimination tests
+eachTest = 2
+
+## Number of new instances added to each race before evaluating instances from
+## previous races
+elitistNewInstances = 10
+
+## Enable/disable the sampling of the training instances. If the option
+## sampleInstances is disabled, the instances are used in the order provided in the
+## trainInstancesFile or in the order they are read from the trainInstancesDir
+## when trainInstancesFile is not provided.
+sampleInstances = 0
+
+## File with all instances
+trainInstancesFile = "../mission-folder/instances-list-4.txt"
+
+#Enable/disable deterministic target algorithm mode. If the target algorithm 
+#is deterministic,configurations will be evaluated only once per instance.
+#This setting should only be used for target algorithms that do not have a 
+#stochastic behavior and, therefore, executing the target algorithm on the 
+#same instance several times with different seeds does not make sense.
+deterministic=1
+ 
+## END of scenario file
+############################################################################
