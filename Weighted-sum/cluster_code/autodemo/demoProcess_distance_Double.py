@@ -31,12 +31,11 @@ input: User demos, eps
 
 class AUTODEMO:
 
-    def __init__(self, experience, extra, nb_missions):
+    def __init__(self, experience, nb_missions):
         self.experience = experience
-        self.extra = extra
         self.nb_missions = int(nb_missions)
         self.mission = self.experience.split("_")[0]
-        self.folder = f"/home/jszpirer/Memoirepaper/codeDemo-Fruit/TuttiFrutti/local_code/ManualDesign/irace/{experience}/{experience}{extra}" #Change with your path
+        self.folder = f"/home/jszpirer/TuttiFrutti/autodemo/irace/{experience}" #Change with your path
         self.demoFile = f"{self.folder}/mission-folder/{self.mission}.argos"
         self.arenaD = 1.73205
         self.demos = self.computeDemo(self.demoFile) # self.other_info when time and second mission
@@ -243,9 +242,9 @@ class AUTODEMO:
         compute the features expectations mu
         in form of a list of position of all robots"""
         # Same as computePhiE but with the values after an iteration
-        # pfsm=" ".join(self.PFSM.convert_to_commandline_args())
+        pfsm=" ".join(self.PFSM.convert_to_commandline_args())
 
-        self.run_Argos(sleep=3)
+        self.run_Argos(pfsm=pfsm, sleep=3)
         # extract robots position  from argos output file
         # computes features expectation with demo positions
 
@@ -392,7 +391,7 @@ class AUTODEMO:
         now = datetime.now()
         dt = now.strftime("%d_%m_%Y_%H_%M_%S")
 
-        with open(f"{self.folder}/{self.experience}{self.extra}.json", "w") as file:
+        with open(f"{self.folder}/{self.experience}.json", "w") as file:
             json.dump([], file)
 
         dico = {"iter" : "0",
@@ -410,9 +409,9 @@ class AUTODEMO:
                 "Norm" : "L2"
                 }
 
-        with open(f"{self.folder}/{self.experience}{self.extra}.json", "r") as file:
+        with open(f"{self.folder}/{self.experience}.json", "r") as file:
             info = json.load(file)
-        with open(f"{self.folder}/{self.experience}{self.extra}.json", "w") as file:
+        with open(f"{self.folder}/{self.experience}.json", "w") as file:
             info.append(dico)
             json.dump(info, file, indent=4)
         
@@ -423,7 +422,6 @@ class AUTODEMO:
         
 if __name__ == '__main__':
     experience = sys.argv[1]
-    extra = sys.argv[2]
-    nb_missions = sys.argv[3]
-    autodemo = AUTODEMO(experience, extra, nb_missions)
+    nb_missions = sys.argv[2]
+    autodemo = AUTODEMO(experience, nb_missions)
     autodemo.initiateJson()
