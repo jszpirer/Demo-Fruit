@@ -1,0 +1,312 @@
+<?xml version="1.0" ?>
+<argos-configuration>
+    <!-- ************* -->
+    <!-- * Framework * -->
+    <!-- ************* -->
+    <framework>
+        <experiment length="120" ticks_per_second="10" random_seed="0"/>
+    </framework>
+
+    <!-- ****************** -->
+    <!-- * Loop functions * -->
+    <!-- ****************** -->
+    <loop_functions library="/home/jszpirer/TuttiFrutti/experiments-loop-functions/build/loop-functions/moca/libtuttifrutti_restaurant_double_loopfunc.so" label="tuttifrutti_restaurant_double_loop_function">
+         <params number_robots="20"
+                 build_arena="true"
+                 number_edges="6"
+                 number_boxes_per_edge="4"
+                 lenght_boxes="0.25"
+                 maximization="false"/>
+        <circle position="0,0" radius="0.65" color="white"/>
+        <rectangle center="1,0" angle="90" width="1" height="1.732051" color="black"/>
+        <rectangle center="-1,0" angle="90" width="1" height="1.732051" color="black"/>
+        <demo id="demo1">
+            <epuck id="Epuck_0" position="-0.2697747,-0.05395651"/>
+            <epuck id="Epuck_1" position="-0.1816189,-0.1538666"/>
+            <epuck id="Epuck_2" position="-0.01118422,-0.05983326"/>
+            <epuck id="Epuck_3" position="-0.08758605,0.1164776"/>
+            <epuck id="Epuck_4" position="-0.1639876,0.05183011"/>
+            <epuck id="Epuck_5" position="0.04758631,0.05770677"/>
+            <epuck id="Epuck_6" position="0.1239878,0.0400759"/>
+            <epuck id="Epuck_7" position="0.1298649,-0.1009733"/>
+            <epuck id="Epuck_8" position="0.03583181,-0.1656208"/>
+            <epuck id="Epuck_9" position="-0.1228483,-0.0833416"/>
+            <epuck id="Epuck_10" position="-0.06995501,-0.01281744"/>
+            <epuck id="Epuck_11" position="-0.02293851,0.08121508"/>
+            <epuck id="Epuck_12" position="0.01232379,0.139986"/>
+            <epuck id="Epuck_13" position="0.08284833,0.1282317"/>
+            <epuck id="Epuck_14" position="0.1474959,0.110601"/>
+            <epuck id="Epuck_15" position="0.2003894,0.03419924"/>
+            <epuck id="Epuck_16" position="0.08284833,-0.03632578"/>
+            <epuck id="Epuck_17" position="0.1827583,-0.0539566"/>
+            <epuck id="Epuck_18" position="-0.04056975,-0.1421125"/>
+            <epuck id="Epuck_19" position="0.1004794,-0.20676"/>
+            <epuck id="Epuck_0" position="0.5693308,0.6952785"/>
+            <epuck id="Epuck_1" position="0.4963934,0.7693291"/>
+            <epuck id="Epuck_2" position="0.4097819,0.8226349"/>
+            <epuck id="Epuck_3" position="0.2765238,0.8159711"/>
+            <epuck id="Epuck_4" position="0.1165986,0.8159711"/>
+            <epuck id="Epuck_5" position="-0.04332149,0.8093085"/>
+            <epuck id="Epuck_6" position="-0.1499327,0.8093084"/>
+            <epuck id="Epuck_7" position="-0.2898604,0.8026446"/>
+            <epuck id="Epuck_8" position="-0.4431143,0.8093086"/>
+            <epuck id="Epuck_9" position="-0.5360814,0.7618678"/>
+            <epuck id="Epuck_10" position="-0.5826946,0.6553229"/>
+            <epuck id="Epuck_11" position="-0.6159903,0.5620953"/>
+            <epuck id="Epuck_12" position="-0.6359674,0.4688683"/>
+            <epuck id="Epuck_13" position="-0.7092174,0.3756407"/>
+            <epuck id="Epuck_14" position="-0.7624918,0.2757529"/>
+            <epuck id="Epuck_15" position="-0.822423,0.1825258"/>
+            <epuck id="Epuck_16" position="-0.8690367,0.09595847"/>
+            <epuck id="Epuck_17" position="-0.9089913,-0.02390468"/>
+            <epuck id="Epuck_18" position="-0.8890134,-0.1437695"/>
+            <epuck id="Epuck_19" position="-0.7957864,-0.2303383"/>
+        </demo>
+        <demo id="demo2">
+            <epuck id="Epuck_0" position="-0.2168812,-0.02457157"/>
+            <epuck id="Epuck_1" position="-0.1287253,-0.1186041"/>
+            <epuck id="Epuck_2" position="-0.1110943,-0.05395654"/>
+            <epuck id="Epuck_3" position="-0.1463566,0.06946188"/>
+            <epuck id="Epuck_4" position="-0.00530725,0.06946182"/>
+            <epuck id="Epuck_5" position="0.0358318,-0.05983329"/>
+            <epuck id="Epuck_6" position="-0.08170904,0.004813373"/>
+            <epuck id="Epuck_7" position="-0.03469251,0.1458626"/>
+            <epuck id="Epuck_8" position="0.1063563,0.1047235"/>
+            <epuck id="Epuck_9" position="0.04170883,0.04595351"/>
+            <epuck id="Epuck_10" position="-0.03469251,-0.04220247"/>
+            <epuck id="Epuck_11" position="-0.04644675,-0.1597433"/>
+            <epuck id="Epuck_12" position="0.1357419,-0.1362349"/>
+            <epuck id="Epuck_13" position="0.1181109,-0.01281738"/>
+            <epuck id="Epuck_14" position="0.04758632,-0.1303583"/>
+            <epuck id="Epuck_15" position="0.1710039,-0.06571075"/>
+            <epuck id="Epuck_16" position="0.2003894,0.04595357"/>
+            <epuck id="Epuck_17" position="0.0240778,0.1576168"/>
+            <epuck id="Epuck_18" position="-0.1228483,0.1458626"/>
+            <epuck id="Epuck_19" position="-0.2168811,-0.1127274"/>
+            <epuck id="Epuck_0" position="-0.9223102,0.01604784"/>
+            <epuck id="Epuck_1" position="-0.9089914,-0.1038147"/>
+            <epuck id="Epuck_2" position="-0.8357409,-0.230338"/>
+            <epuck id="Epuck_3" position="-0.7824676,-0.330223"/>
+            <epuck id="Epuck_4" position="-0.7158771,-0.4167923"/>
+            <epuck id="Epuck_5" position="-0.6626056,-0.5033634"/>
+            <epuck id="Epuck_6" position="-0.589354,-0.6099092"/>
+            <epuck id="Epuck_7" position="-0.536081,-0.6964749"/>
+            <epuck id="Epuck_8" position="-0.5027853,-0.8296579"/>
+            <epuck id="Epuck_9" position="-0.3831455,-0.8365086"/>
+            <epuck id="Epuck_10" position="-0.2632074,-0.8231766"/>
+            <epuck id="Epuck_11" position="-0.1166168,-0.8165237"/>
+            <epuck id="Epuck_12" position="0.03663273,-0.8365034"/>
+            <epuck id="Epuck_13" position="0.2032128,-0.8365034"/>
+            <epuck id="Epuck_14" position="0.2965097,-0.8231817"/>
+            <epuck id="Epuck_15" position="0.423108,-0.8365093"/>
+            <epuck id="Epuck_16" position="0.522718,-0.8030217"/>
+            <epuck id="Epuck_17" position="0.556013,-0.6898162"/>
+            <epuck id="Epuck_18" position="0.6359225,-0.5832701"/>
+            <epuck id="Epuck_19" position="-0.8890132,0.1225957"/>
+        </demo>
+        <demo id="demo3">
+            <epuck id="Epuck_0" position="-0.1874959,-0.01281744"/>
+            <epuck id="Epuck_1" position="-0.04644675,-0.1303583"/>
+            <epuck id="Epuck_2" position="-0.04056975,0.0283218"/>
+            <epuck id="Epuck_3" position="-0.09934007,-0.03044826"/>
+            <epuck id="Epuck_4" position="-0.01118422,-0.04220247"/>
+            <epuck id="Epuck_5" position="0.04758631,0.03419924"/>
+            <epuck id="Epuck_6" position="-0.1228483,0.06946188"/>
+            <epuck id="Epuck_7" position="-0.05820078,0.1164776"/>
+            <epuck id="Epuck_8" position="0.0240778,0.09884685"/>
+            <epuck id="Epuck_9" position="0.1239878,0.09884685"/>
+            <epuck id="Epuck_10" position="0.1181109,-0.01281738"/>
+            <epuck id="Epuck_11" position="0.05934031,-0.05983326"/>
+            <epuck id="Epuck_12" position="0.02995483,-0.1421125"/>
+            <epuck id="Epuck_13" position="0.1651269,-0.1068499"/>
+            <epuck id="Epuck_14" position="-0.1698649,-0.08921915"/>
+            <epuck id="Epuck_15" position="-0.1228483,-0.1303583"/>
+            <epuck id="Epuck_16" position="-0.1874959,0.05770683"/>
+            <epuck id="Epuck_17" position="-0.1463566,0.139986"/>
+            <epuck id="Epuck_18" position="-0.01706126,0.1693709"/>
+            <epuck id="Epuck_19" position="0.07109433,0.1634943"/>
+            <epuck id="Epuck_0" position="-0.8823544,-0.05054149"/>
+            <epuck id="Epuck_1" position="-0.9356277,0.02936792"/>
+            <epuck id="Epuck_2" position="-0.8557191,0.1692078"/>
+            <epuck id="Epuck_3" position="-0.8956737,0.1225954"/>
+            <epuck id="Epuck_4" position="-0.8157644,0.235799"/>
+            <epuck id="Epuck_5" position="-0.7691506,0.3023897"/>
+            <epuck id="Epuck_6" position="-0.742514,0.3956175"/>
+            <epuck id="Epuck_7" position="-0.6825815,0.4688669"/>
+            <epuck id="Epuck_8" position="-0.6359677,0.5554374"/>
+            <epuck id="Epuck_9" position="-0.5826951,0.635347"/>
+            <epuck id="Epuck_10" position="-0.5427406,0.7219147"/>
+            <epuck id="Epuck_11" position="-0.4830936,0.8159712"/>
+            <epuck id="Epuck_12" position="-0.369819,0.8426244"/>
+            <epuck id="Epuck_13" position="-0.2232281,0.8359606"/>
+            <epuck id="Epuck_14" position="-0.1099535,0.822635"/>
+            <epuck id="Epuck_15" position="0.003331899,0.8359604"/>
+            <epuck id="Epuck_16" position="0.1499057,0.8292978"/>
+            <epuck id="Epuck_17" position="0.2765178,0.8226349"/>
+            <epuck id="Epuck_18" position="0.376451,0.8159713"/>
+            <epuck id="Epuck_19" position="0.4630863,0.7959818"/>
+        </demo>
+        <demo id="demo4">
+            <epuck id="Epuck_0" position="-0.00530725,-0.001063228"/>
+            <epuck id="Epuck_1" position="-0.08170905,-0.1127275"/>
+            <epuck id="Epuck_2" position="0.04170883,-0.1068499"/>
+            <epuck id="Epuck_3" position="-0.04644675,-0.04808003"/>
+            <epuck id="Epuck_4" position="-0.09934007,-0.001063287"/>
+            <epuck id="Epuck_5" position="-0.02293851,0.06946188"/>
+            <epuck id="Epuck_6" position="0.08284833,0.05770683"/>
+            <epuck id="Epuck_7" position="0.05346328,-0.05395666"/>
+            <epuck id="Epuck_8" position="0.1592499,-0.03632575"/>
+            <epuck id="Epuck_9" position="0.1357419,0.01069093"/>
+            <epuck id="Epuck_10" position="0.04758632,0.139986"/>
+            <epuck id="Epuck_11" position="-0.02293851,0.1576167"/>
+            <epuck id="Epuck_12" position="-0.1228483,0.1223551"/>
+            <epuck id="Epuck_13" position="-0.1581106,0.05770683"/>
+            <epuck id="Epuck_14" position="-0.1992498,-0.04808"/>
+            <epuck id="Epuck_15" position="-0.1581106,-0.1303583"/>
+            <epuck id="Epuck_16" position="-0.05232375,-0.1891292"/>
+            <epuck id="Epuck_17" position="0.04170883,-0.177375"/>
+            <epuck id="Epuck_18" position="0.1063563,-0.136235"/>
+            <epuck id="Epuck_19" position="0.1710039,-0.09509581"/>
+            <epuck id="Epuck_0" position="-0.5161048,0.7618678"/>
+            <epuck id="Epuck_1" position="-0.5560588,0.6686414"/>
+            <epuck id="Epuck_2" position="-0.5893538,0.5687554"/>
+            <epuck id="Epuck_3" position="-0.6626049,0.482186"/>
+            <epuck id="Epuck_4" position="-0.7291952,0.3889598"/>
+            <epuck id="Epuck_5" position="-0.7558323,0.2957314"/>
+            <epuck id="Epuck_6" position="-0.7957875,0.1958441"/>
+            <epuck id="Epuck_7" position="-0.8690379,0.129253"/>
+            <epuck id="Epuck_8" position="-0.9156509,0.02270764"/>
+            <epuck id="Epuck_9" position="-0.8756961,-0.08383852"/>
+            <epuck id="Epuck_10" position="-0.8357412,-0.1903843"/>
+            <epuck id="Epuck_11" position="-0.7824689,-0.2836117"/>
+            <epuck id="Epuck_12" position="-0.722536,-0.3901575"/>
+            <epuck id="Epuck_13" position="-0.6692633,-0.4767252"/>
+            <epuck id="Epuck_14" position="-0.6026728,-0.5832728"/>
+            <epuck id="Epuck_15" position="-0.5360813,-0.6831579"/>
+            <epuck id="Epuck_16" position="-0.4897566,-0.7565468"/>
+            <epuck id="Epuck_17" position="-0.4497773,-0.829851"/>
+            <epuck id="Epuck_18" position="-0.3212346,-0.8610255"/>
+            <epuck id="Epuck_19" position="-0.2365547,-0.8498353"/>
+        </demo>
+        <demo id="demo5">
+            <epuck id="Epuck_0" position="-0.02293851,-0.001063228"/>
+            <epuck id="Epuck_1" position="-0.08170905,-0.07158741"/>
+            <epuck id="Epuck_2" position="-0.01706126,-0.09509581"/>
+            <epuck id="Epuck_3" position="0.05934031,-0.006939948"/>
+            <epuck id="Epuck_4" position="-0.07583202,0.06946188"/>
+            <epuck id="Epuck_5" position="-0.1639876,0.004813433"/>
+            <epuck id="Epuck_6" position="0.0358318,0.09884685"/>
+            <epuck id="Epuck_7" position="0.1004794,0.04595351"/>
+            <epuck id="Epuck_8" position="0.1357419,0.01069093"/>
+            <epuck id="Epuck_9" position="0.1063563,-0.08334157"/>
+            <epuck id="Epuck_10" position="0.02995483,-0.1950058"/>
+            <epuck id="Epuck_11" position="-0.06995501,-0.1832516"/>
+            <epuck id="Epuck_12" position="-0.1522336,-0.1244817"/>
+            <epuck id="Epuck_13" position="-0.1169713,-0.01281744"/>
+            <epuck id="Epuck_14" position="-0.1287253,0.08121508"/>
+            <epuck id="Epuck_15" position="-0.04644675,0.1458626"/>
+            <epuck id="Epuck_16" position="0.05346329,0.1517402"/>
+            <epuck id="Epuck_17" position="0.1416189,0.122355"/>
+            <epuck id="Epuck_18" position="0.2003894,0.06358421"/>
+            <epuck id="Epuck_19" position="0.2003894,-0.05395663"/>
+            <epuck id="Epuck_0" position="-0.9089931,0.009388328"/>
+            <epuck id="Epuck_1" position="-0.8690372,-0.07717851"/>
+            <epuck id="Epuck_2" position="-0.8024455,-0.1770658"/>
+            <epuck id="Epuck_3" position="-0.7558318,-0.2769515"/>
+            <epuck id="Epuck_4" position="-0.7092178,-0.3502036"/>
+            <epuck id="Epuck_5" position="-0.6359687,-0.4367723"/>
+            <epuck id="Epuck_6" position="-0.589354,-0.556636"/>
+            <epuck id="Epuck_7" position="-0.5427411,-0.6365445"/>
+            <epuck id="Epuck_8" position="-0.463104,-0.7498863"/>
+            <epuck id="Epuck_9" position="-0.3831454,-0.8098594"/>
+            <epuck id="Epuck_10" position="-0.276534,-0.8165139"/>
+            <epuck id="Epuck_11" position="-0.1565961,-0.8298369"/>
+            <epuck id="Epuck_12" position="-0.02333163,-0.8231794"/>
+            <epuck id="Epuck_13" position="0.1166067,-0.8165179"/>
+            <epuck id="Epuck_14" position="0.2165443,-0.8298396"/>
+            <epuck id="Epuck_15" position="0.3298211,-0.8298455"/>
+            <epuck id="Epuck_16" position="0.4564265,-0.816524"/>
+            <epuck id="Epuck_17" position="0.5360359,-0.7564091"/>
+            <epuck id="Epuck_18" position="0.5426947,-0.6631803"/>
+            <epuck id="Epuck_19" position="0.6026273,-0.5832707"/>
+        </demo>
+    </loop_functions>
+
+    <!-- *************** -->
+    <!-- * Controllers * -->
+    <!-- *************** -->
+    <controllers>
+        <!-- TRANSMITTER -->
+        <automode_controller id="tuttifrutti" library="/home/jszpirer/TuttiFrutti/AutoMoDe-tuttifrutti/build/src/libautomode.so">
+            <actuators>
+                <epuck_wheels implementation="default" noise_std_dev="0.05"/>
+                <epuck_rgb_leds implementation="default" medium="leds"/>
+                <epuck_range_and_bearing implementation="medium" medium="rab" data_size="4" range="0.5"/>
+            </actuators>
+            <sensors>
+                <epuck_proximity implementation="default" show_rays="false" noise_level="0.05" calibrated="true"/>
+                <epuck_range_and_bearing implementation="medium" medium="rab" data_size="4" nois_std_deviation="1.5" loss_probability="0.85" calibrated="true"/>
+                <epuck_light implementation="default" show_rays="false" noise_level="0.05" calibrated="true"/>
+                <epuck_ground implementation="rot_z_only" noise_level="0.05" calibrated="true"/>
+                <epuck_omnidirectional_camera implementation="rot_z_only" medium="leds" show_rays="false"/>
+            </sensors>
+            <params readable="true" history='false' fsm-config="--nstates 1 --s0 1 --cle0 4"/>
+        </automode_controller>
+    </controllers>
+
+    <!-- ********* -->
+    <!-- * Arena * -->
+    <!-- ********* -->
+    <arena size="2, 2, 0.15" center="0,0,0.075">
+
+        <!-- Change the floor here -->
+        <floor id="floor" source="loop_functions" pixels_per_meter="300"/>
+        <!-- Change the light here -->
+        <!-- Please note that this light has an intensity equal to 0 -->
+        <!-- and therefore does not affect the experiment. -->
+        <!-- ARGoS requires at least one light when using the light sensor -->
+        <light id="light" position="0,-1,0.45" orientation="0,0,0" color="black" intensity="0.0" medium="leds"/>
+
+        <!-- ********** -->
+        <!-- * E-Puck * -->
+        <!-- ********** -->
+
+        <!-- The epucks are distributed by the AutoMoDeLoopFunctions. -->
+        <distribute>
+            <position method="uniform" min="-1,-1,0" max="1,1,0" />
+            <orientation method="gaussian" mean="0,0,0" std_dev="360,0,0" />
+            <entity quantity="20" max_trials="100">
+                <e-puck id="epuck">
+                    <controller config="tuttifrutti" />
+                </e-puck>
+            </entity>
+        </distribute>
+    </arena>
+
+    <!-- ******************* -->
+    <!-- * Physics engines * -->
+    <!-- ******************* -->
+    <physics_engines>
+        <dynamics2d id="dyn2d" />
+    </physics_engines>
+
+    <!-- ********* -->
+    <!-- * Media * -->
+    <!-- ********* -->
+    <media>
+        <led id="leds" grid_size="1,1,1"/>
+        <range_and_bearing id="rab" grid_size="20,20,1"/>
+    </media>
+
+    <!-- ***************** -->
+    <!-- * Visualization * -->
+    <!-- ***************** -->
+    <visualization>
+        <!-- qt-opengl>
+            <camera>
+                <placement idx="0" position="0,0,4.5" look_at="0,0,0" lens_focal_length="30" />
+            </camera>
+        </qt-opengl -->
+    </visualization>
+
+</argos-configuration>
